@@ -1,0 +1,11 @@
+<template name="layout">
+  <h1>Welcome to Meteor!</h1>
+  
+  <ul>
+    <li>
+      <a href="{{pathFor route='todos_route'}}">Go home</a>
+    </li>
+  </ul>
+
+  {{> yield}}
+</template>

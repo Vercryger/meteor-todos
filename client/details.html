@@ -1,0 +1,8 @@
+<template name="todo_details">
+  <h3>{{todo.title}}</h3>
+  <h4>{{todo.subtitle}}</h4>
+  
+  {{#each task in todo.subtasks}}
+    <p><input type="checkbox"> {{task.title}}</p>
+  {{/each}}
+</template>

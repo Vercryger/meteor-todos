@@ -1,0 +1,11 @@
+<template name="my_todos">
+  <p>My todos</p>
+
+  <ul>
+    {{#each todo in todos}}
+    <li>
+      <a href="/todo/{{todo._id}}">{{todo.title}}</a>
+    </li>
+    {{/each}}
+  </ul>
+</template>
