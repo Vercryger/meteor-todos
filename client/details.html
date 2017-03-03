@@ -5,4 +5,8 @@
   {{#each task in todo.subtasks}}
     <p><input type="checkbox"> {{task.title}}</p>
   {{/each}}
+
+  {{#if loadMore}}
+    <a href="{{loadMore}}">Load more</a>
+  {{/if}}
 </template>
